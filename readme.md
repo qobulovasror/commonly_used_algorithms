@@ -1,7 +1,12 @@
 # commonly used algorithms
+ - - - - - -
+## algorithms
+1. [filter items](#1-filter-items)
+2. [read, translate and write sql db](#2-read-and-write-sql)
 
-1. filter items
-   ```js
+## algorithm codes
+### 1. filter items for react apps
+ ```js
     const rows = [];
         this.props.products.forEach((product) => {
             if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
@@ -13,7 +18,7 @@
             rows.push(<ProductRow product={product} key={product.name} /> );
         });
    ```
-3. read, translate and write sql db
+### 2. read and write sql db with nodejs
    ```js
    const mysql = require('mysql');
    // Ma'lumotlar bazasiga ulanish uchun konfiguratsiya
