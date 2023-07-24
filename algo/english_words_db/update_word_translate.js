@@ -1,3 +1,5 @@
+//read sql words then translate words then write words translated
+
 const mysql = require("mysql");
 const axios = require("axios");
 
